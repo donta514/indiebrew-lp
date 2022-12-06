@@ -1,0 +1,11 @@
+@import url("https://fonts.google.com/specimen/DM+Sans");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  color: green;
+  font-family: "DM Sans", sans-serif; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0RBQVk7QUFLWjtFQUNFLHNCQUFzQjtFQUN0QixVQUFVO0VBQ1YsU0FBUyxFQUFBOztBQUdYO0VBQ0UsWUFBWTtFQUNaLGtDQVhzQyxFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGUuY29tL3NwZWNpbWVuL0RNK1NhbnNcIik7XG5cbiRmb250LWZhbWlseS1ib2R5OiBcIkRNIFNhbnNcIiwgc2Fucy1zZXJpZjtcblxuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xufVxuXG5oMSB7XG4gIGNvbG9yOiBncmVlbjtcbiAgZm9udC1mYW1pbHk6ICRmb250LWZhbWlseS1ib2R5O1xufVxuIl19 */
