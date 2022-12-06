@@ -1,15 +1,65 @@
 @import url("https://fonts.google.com/specimen/DM+Sans");
 
-$font-family-body: "DM Sans", sans-serif;
+/*********************************
+ * COLOR SCHEME AND FONT STYLING *
+ *********************************/
+:root {
+  --font-body: "DM Sans", sans-serif;
 
+  --content-primary: #000000;
+  --content-secondary: #bcbcbc;
+  --ui--bg-purple: #664efc;
+}
+
+/********************************************************
+ * CSS RESET FOR WEBSITE RESPONSIVENESS IN ALL BROWSERS *
+ ********************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
-h1 {
-  color: green;
-  font-family: $font-family-body;
+html {
+  color-scheme: dark light;
+  scroll-behavior: smooth;
 }
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/**********************************
+* HARD CODED CLASS-BASED STYLING *
+**********************************/
+
+.container {
+  margin-inline: 1rem;
+  max-width: 1140px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+/*************************
+ * START OF SASS STYLING *
+ *************************/

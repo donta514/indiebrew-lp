@@ -1,11 +1,60 @@
+/**************************************
+ * CSS VARIABLES FOR FONTS *
+ **************************************/
 @import url("https://fonts.google.com/specimen/DM+Sans");
+/**********************************************
+ * COLOR SCHEME SIGN UP - MOBILE/DESKTOP VIEW *
+ **********************************************/
+:root {
+  /**
+  */
+  --content-primary: #000000;
+  --content-secondary: #bcbcbc;
+  --ui--bg-purple: #664efc; }
+
+/********************************************************
+ * CSS RESET FOR WEBSITE RESPONSIVENESS IN ALL BROWSERS *
+ ********************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
 * {
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  margin: 0; }
+  font: inherit; }
 
-h1 {
-  color: green;
-  font-family: "DM Sans", sans-serif; }
+html {
+  color-scheme: dark light;
+  scroll-behavior: smooth; }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0RBQVk7QUFLWjtFQUNFLHNCQUFzQjtFQUN0QixVQUFVO0VBQ1YsU0FBUyxFQUFBOztBQUdYO0VBQ0UsWUFBWTtFQUNaLGtDQVhzQyxFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGUuY29tL3NwZWNpbWVuL0RNK1NhbnNcIik7XG5cbiRmb250LWZhbWlseS1ib2R5OiBcIkRNIFNhbnNcIiwgc2Fucy1zZXJpZjtcblxuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgcGFkZGluZzogMDtcbiAgbWFyZ2luOiAwO1xufVxuXG5oMSB7XG4gIGNvbG9yOiBncmVlbjtcbiAgZm9udC1mYW1pbHk6ICRmb250LWZhbWlseS1ib2R5O1xufVxuIl19 */
+body {
+  min-height: 100vh; }
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%; }
+
+/**********************************
+* HARD CODED CLASS-BASED STYLING *
+**********************************/
+.container {
+  margin-inline: 1rem;
+  max-width: 1140px;
+  width: 100%; }
+
+p {
+  line-height: 1.5; }
+
+section {
+  margin: 1rem 0; }
+
+/*************************
+ * START OF SASS STYLING *
+ *************************/
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O3VDQ0V1QztBREN2Qyx3REFBWTtBQUlaOzsrQ0NEK0M7QURJL0M7RUFFRTtHQ0hDO0VETUQsMEJBQWtCO0VBQ2xCLDRCQUFvQjtFQUNwQix3QkFBZ0IsRUFBQTs7QUFHbEI7O3lEQ0p5RDtBRE96RDs7O0VBR0Usc0JBQXNCLEVBQUE7O0FBR3hCO0VBQ0UsU0FBUztFQUNULFVBQVU7RUFDVixhQUFhLEVBQUE7O0FBR2Y7RUFDRSx3QkFBd0I7RUFDeEIsdUJBQXVCLEVBQUE7O0FBR3pCO0VBQ0UsaUJBQWlCLEVBQUE7O0FBR25COzs7O0VBSUUsY0FBYztFQUNkLGVBQWUsRUFBQTs7QUFHakI7O2tDQ1RrQztBRGFsQztFQUNFLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsV0FBVyxFQUFBOztBQUdiO0VBQ0UsZ0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UsY0FBYyxFQUFBOztBQUdoQjs7MEJDYjBCIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogQ1NTIFZBUklBQkxFUyBGT1IgRk9OVFMgKlxuICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZS5jb20vc3BlY2ltZW4vRE0rU2Fuc1wiKTtcblxuJGZvbnQtZmFtaWx5LWJvZHk6IFwiRE0gU2Fuc1wiLCBzYW5zLXNlcmlmO1xuXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogQ09MT1IgU0NIRU1FIFNJR04gVVAgLSBNT0JJTEUvREVTS1RPUCBWSUVXICpcbiAqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuOnJvb3Qge1xuXG4gIC8qKlxuICAqL1xuXG4gIC0tY29udGVudC1wcmltYXJ5OiAjMDAwMDAwO1xuICAtLWNvbnRlbnQtc2Vjb25kYXJ5OiAjYmNiY2JjO1xuICAtLXVpLS1iZy1wdXJwbGU6ICM2NjRlZmM7XG59XG5cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogQ1NTIFJFU0VUIEZPUiBXRUJTSVRFIFJFU1BPTlNJVkVORVNTIElOIEFMTCBCUk9XU0VSUyAqXG4gKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4qLFxuKjo6YmVmb3JlLFxuKjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG4qIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBmb250OiBpbmhlcml0O1xufVxuXG5odG1sIHtcbiAgY29sb3Itc2NoZW1lOiBkYXJrIGxpZ2h0O1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbn1cblxuYm9keSB7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xufVxuXG5pbWcsXG5waWN0dXJlLFxuc3ZnLFxudmlkZW8ge1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWF4LXdpZHRoOiAxMDAlO1xufVxuXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuKiBIQVJEIENPREVEIENMQVNTLUJBU0VEIFNUWUxJTkcgKlxuKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cblxuLmNvbnRhaW5lciB7XG4gIG1hcmdpbi1pbmxpbmU6IDFyZW07XG4gIG1heC13aWR0aDogMTE0MHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxucCB7XG4gIGxpbmUtaGVpZ2h0OiAxLjU7XG59XG5cbnNlY3Rpb24ge1xuICBtYXJnaW46IDFyZW0gMDtcbn1cblxuLyoqKioqKioqKioqKioqKioqKioqKioqKipcbiAqIFNUQVJUIE9GIFNBU1MgU1RZTElORyAqXG4gKioqKioqKioqKioqKioqKioqKioqKioqKi9cbiIsIi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogQ1NTIFZBUklBQkxFUyBGT1IgRk9OVFMgKlxuICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZS5jb20vc3BlY2ltZW4vRE0rU2Fuc1wiKTtcbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG4gKiBDT0xPUiBTQ0hFTUUgU0lHTiBVUCAtIE1PQklMRS9ERVNLVE9QIFZJRVcgKlxuICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG46cm9vdCB7XG4gIC8qKlxuICAqL1xuICAtLWNvbnRlbnQtcHJpbWFyeTogIzAwMDAwMDtcbiAgLS1jb250ZW50LXNlY29uZGFyeTogI2JjYmNiYztcbiAgLS11aS0tYmctcHVycGxlOiAjNjY0ZWZjOyB9XG5cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogQ1NTIFJFU0VUIEZPUiBXRUJTSVRFIFJFU1BPTlNJVkVORVNTIElOIEFMTCBCUk9XU0VSUyAqXG4gKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4qLFxuKjo6YmVmb3JlLFxuKjo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94OyB9XG5cbioge1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIGZvbnQ6IGluaGVyaXQ7IH1cblxuaHRtbCB7XG4gIGNvbG9yLXNjaGVtZTogZGFyayBsaWdodDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7IH1cblxuYm9keSB7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoOyB9XG5cbmltZyxcbnBpY3R1cmUsXG5zdmcsXG52aWRlbyB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBtYXgtd2lkdGg6IDEwMCU7IH1cblxuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKipcbiogSEFSRCBDT0RFRCBDTEFTUy1CQVNFRCBTVFlMSU5HICpcbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4uY29udGFpbmVyIHtcbiAgbWFyZ2luLWlubGluZTogMXJlbTtcbiAgbWF4LXdpZHRoOiAxMTQwcHg7XG4gIHdpZHRoOiAxMDAlOyB9XG5cbnAge1xuICBsaW5lLWhlaWdodDogMS41OyB9XG5cbnNlY3Rpb24ge1xuICBtYXJnaW46IDFyZW0gMDsgfVxuXG4vKioqKioqKioqKioqKioqKioqKioqKioqKlxuICogU1RBUlQgT0YgU0FTUyBTVFlMSU5HICpcbiAqKioqKioqKioqKioqKioqKioqKioqKioqL1xuIl19 */
