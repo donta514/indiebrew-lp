@@ -33,6 +33,12 @@ html {
 
 body {
   min-height: 100vh;
+  background: radial-gradient(
+      50% 0% at 50% 50%,
+      rgba(193, 67, 252, 0.6) 0%,
+      rgba(255, 221, 255, 0.6) 60%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
 img,
@@ -52,14 +58,115 @@ video {
   max-width: 1140px;
 }
 
-p {
-  line-height: 1.5;
+.bold {
+  font-weight: 700;
 }
 
-section {
+p {
+  line-height: 27px;
+}
+
+header,
+section,
+footer {
   margin: 1rem 0;
 }
 
 /*************************
  * START OF SASS STYLING *
  *************************/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__prev {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &--arrow {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      aspect-ratio: 1/1;
+    }
+    &--link {
+      text-decoration: none;
+      font-family: var(--font-body);
+      color: var(--content-primary);
+      font-weight: 700;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+.hero {
+  &__title {
+    font-family: var(--font-body);
+    color: var(--content-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46.87px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__features {
+    display: grid;
+    gap: 1.5rem;
+    &__section {
+      display: flex;
+      align-items: flex-start;
+      &--text {
+        margin-left: 5px;
+        font-family: var(--font-body);
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+.form {
+  background-color: #fff;
+  font-family: var(--font-body);
+  padding: 2rem;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__body {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    &__section {
+      display: grid;
+      label {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      &--checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        label {
+          font-weight: normal;
+        }
+      }
+    }
+    .submit__btn {
+      padding: 1rem 0.5rem;
+      background-color: var(--ui--bg-purple);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
