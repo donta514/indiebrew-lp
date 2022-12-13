@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  // min-height: 100vh;
   background: radial-gradient(
       50% 0% at 50% 50%,
       rgba(193, 67, 252, 0.6) 0%,
@@ -53,8 +53,9 @@ video {
 * HARD CODED CLASS-BASED STYLING *
 **********************************/
 
+.wrapper,
 .container {
-  margin-inline: 1rem;
+  margin: 0 auto;
   max-width: 1140px;
 }
 
@@ -101,72 +102,80 @@ footer {
     }
   }
 }
-.hero {
-  &__title {
-    font-family: var(--font-body);
-    color: var(--content-primary);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46.87px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  &__features {
+.wrapper {
+  @media screen and (min-width: 1024px) {
     display: grid;
-    gap: 1.5rem;
-    &__section {
-      display: flex;
-      align-items: flex-start;
-      &--text {
-        margin-left: 5px;
-        font-family: var(--font-body);
-        font-size: 1.125rem;
-      }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .hero {
+    &__title {
+      font-family: var(--font-body);
+      color: var(--content-primary);
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46.87px;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
-  }
-}
-.form {
-  background-color: #fff;
-  font-family: var(--font-body);
-  padding: 2rem;
-
-  &__title {
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    font-size: 24px;
-  }
-  &__body {
-    display: grid;
-    justify-content: center;
-    gap: 1rem;
-    &__section {
+    &__features {
       display: grid;
-      label {
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-      input {
-        padding: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      &--checkbox {
+      gap: 1.5rem;
+      &__section {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        label {
-          font-weight: normal;
+        align-items: flex-start;
+        &--text {
+          margin-left: 5px;
+          font-family: var(--font-body);
+          font-size: 1.125rem;
         }
       }
     }
-    .submit__btn {
-      padding: 1rem 0.5rem;
-      background-color: var(--ui--bg-purple);
-      color: #fff;
+  }
+  .form {
+    background-color: #fff;
+    display: grid;
+    border-radius: 10px;
+    max-width: 768px;
+    height: 100%;
+    font-family: var(--font-body);
+    padding: 2rem;
+
+    &__title {
+      margin-bottom: 1.5rem;
       font-weight: 700;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
+      font-size: 24px;
+    }
+    &__body {
+      display: grid;
+      justify-content: center;
+      gap: 1rem;
+      &__section {
+        display: grid;
+        label {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        input {
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        &--checkbox {
+          label {
+            font-weight: normal;
+          }
+        }
+      }
+      .submit__btn {
+        padding: 1rem 0.5rem;
+        background-color: var(--ui--bg-purple);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+      }
     }
   }
 }
