@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Home - IndieBrew Landing Page</title>
+    <title>Home — IndieBrew Landing Page</title>
   </head>
   <body>
     <header>
@@ -13,13 +13,24 @@
         <img src="/Assets/Logo.svg" alt="IndieBrew Logo" class="nav__logo" />
         <div class="nav__prev">
           <img
+            id="home"
             src="/Assets/Hamburger Menu.svg"
             alt="Hamburger navigation menu"
             class="nav__prev--arrow"
             width="43"
             height="43"
           />
-          <a href="/" class="nav__prev--link">Back to homepage</a>
+          <div class="nav__desktop">
+            <div class="nav__desktop__header">
+              <a href="/" class="nav__desktop__header--link">Pricing</a>
+              <a href="/" class="nav__desktop__header--link">Support</a>
+            </div>
+            <button class="nav__desktop__btn">
+              <a href="/index.html" class="nav__desktop__btn--text"
+                >Get Started — it's free</a
+              >
+            </button>
+          </div>
         </div>
       </nav>
     </header>

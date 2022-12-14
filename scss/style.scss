@@ -80,6 +80,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2rem;
   &__prev {
     display: flex;
     align-items: center;
@@ -90,6 +91,10 @@ footer {
       border-radius: 5px;
       padding: 10px;
       aspect-ratio: 1/1;
+      @media screen and (max-width: 480px) {
+        background-color: #fff;
+        border: none;
+      }
     }
     &--link {
       text-decoration: none;
@@ -98,6 +103,36 @@ footer {
       font-weight: 700;
       @media screen and (max-width: 767px) {
         display: none;
+      }
+    }
+  }
+  &__desktop {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &__header {
+      &--link {
+        margin-inline: 0.5rem;
+        text-decoration: none;
+        color: var(--content-primary);
+        font-family: var(--font-body);
+        font-size: 1.175rem;
+      }
+    }
+    &__btn {
+      padding: 1rem 1.5rem;
+      border: none;
+      background-color: var(--ui--bg-purple);
+      border-radius: 5px;
+      &--text {
+        font-family: var(--font-body);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.175rem;
       }
     }
   }
