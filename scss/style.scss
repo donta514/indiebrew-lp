@@ -5,9 +5,8 @@
  *********************************/
 :root {
   --font-body: "DM Sans", sans-serif;
-
   --content-primary: #000000;
-  --content-secondary: #bcbcbc;
+  --content-secondary: #6b6b6b;
   --ui--bg-purple: #664efc;
 }
 
@@ -101,7 +100,9 @@ footer {
       font-family: var(--font-body);
       color: var(--content-primary);
       font-weight: 700;
-      @media screen and (max-width: 767px) {
+    }
+    #home {
+      @media screen and (min-width: 767px) {
         display: none;
       }
     }
@@ -133,6 +134,9 @@ footer {
         text-decoration: none;
         font-weight: 700;
         font-size: 1.175rem;
+        span {
+          font-weight: normal;
+        }
       }
     }
   }
@@ -213,6 +217,47 @@ footer {
         border-radius: 5px;
         text-align: center;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+/******************************
+ * START OF HOME PAGE STYLING *
+ ******************************/
+
+.herolp {
+  &__info {
+    &__title {
+      font-family: var(--font-body);
+      color: var(--content-primary);
+      font-weight: 700;
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    &__text {
+      font-family: var(--font-body);
+      color: var(--content-secondary);
+      span {
+        color: var(--ui--bg-purple);
+        font-weight: 700;
+      }
+    }
+    &__btn {
+      padding: 1rem 1.5rem;
+      border: none;
+      background-color: var(--ui--bg-purple);
+      border-radius: 5px;
+      margin: 1.5rem 0;
+      &--text {
+        font-family: var(--font-body);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.175rem;
+        span {
+          font-weight: normal;
+        }
       }
     }
   }
