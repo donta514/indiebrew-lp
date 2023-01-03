@@ -37,11 +37,17 @@
     <main class="wrapper">
       <section>
         <div class="herolp container">
-          <img
-            src="/Assets/Feed Mockup.png"
-            alt="Feed Mockup Image"
-            class="herolp__img"
-          />
+          <picture>
+            <source
+              srcset="/Assets/Feed Mockup2.png"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="/Assets/Feed Mockup.png"
+              alt="Feed Mockup Image"
+              class="herolp__img"
+            />
+          </picture>
           <div class="herolp__info">
             <h1 class="herolp__info__title">
               Your weekly personal feed digest.
@@ -64,6 +70,27 @@
               Join <span>32,642</span> IndieBrewers in curating their personal
               digest.
             </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="resourceslp container">
+          <img
+            src="/Assets/Social Media Icons.png"
+            alt="Social Media Icons image"
+            class="resourceslp__icons"
+          />
+          <div class="resourceslp__info">
+            <h2 class="resourceslp__info__title">
+              Curate your feed from dozens of resources.
+            </h2>
+            <p class="resourceslp__info__text">
+              We cover all major platforms where one could wnat to curate their
+              feed from Reddit, ProductHunt, IndieHackers, and so much more.
+            </p>
+            <a href="/" class="resourceslp__info__btn">
+              See full list of resources<span>→</span>
+            </a>
           </div>
         </div>
       </section>

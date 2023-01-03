@@ -227,6 +227,8 @@ footer {
  ******************************/
 
 .herolp {
+  @media screen and (min-width: 1024px) {
+  }
   &__info {
     &__title {
       font-family: var(--font-body);
@@ -258,6 +260,32 @@ footer {
         span {
           font-weight: normal;
         }
+      }
+    }
+  }
+}
+.resourceslp {
+  margin-top: 7rem;
+  &__info {
+    &__title {
+      font-family: var(--font-body);
+      color: var(--content-primary);
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin: 1rem 0;
+    }
+    &__text {
+      font-family: var(--font-body);
+      color: var(--content-secondary);
+      font-size: 1.175rem;
+    }
+    &__btn {
+      font-family: var(--font-body);
+      color: var(--ui--bg-purple);
+      font-weight: 700;
+      text-decoration: none;
+      span {
+        font-size: 1.4rem;
       }
     }
   }
