@@ -4,11 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Assets/site.webmanifest" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Home — IndieBrew Landing Page</title>
   </head>
   <body>
     <header>
+      <span class="radial"></span>
       <nav class="nav container">
         <img src="/Assets/Logo.svg" alt="IndieBrew Logo" class="nav__logo" />
         <div class="nav__prev">
@@ -39,11 +58,11 @@
         <div class="herolp container">
           <picture>
             <source
-              srcset="/Assets/Feed Mockup2.png"
+              srcset="/Assets/Feed_Mockup2.png"
               media="(min-width: 768px)"
             />
             <img
-              src="/Assets/Feed Mockup.png"
+              src="/Assets/Feed_Mockup2.png"
               alt="Feed Mockup Image"
               class="herolp__img"
             />
@@ -75,15 +94,21 @@
       </section>
       <section>
         <div class="resourceslp container">
-          <img
-            src="/Assets/Social Media Icons.png"
-            alt="Social Media Icons image"
-            class="resourceslp__icons"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/Assets/Social_Media_Icons2.png"
+            />
+            <img
+              src="/Assets/Social_Media_Icons.png"
+              alt="iPhone Mockup Image"
+              class="waitlistlp__img"
+            />
+          </picture>
           <div class="resourceslp__info">
-            <h2 class="resourceslp__info__title">
+            <h1 class="resourceslp__info__title">
               Curate your feed from dozens of resources.
-            </h2>
+            </h1>
             <p class="resourceslp__info__text">
               We cover all major platforms where one could wnat to curate their
               feed from Reddit, ProductHunt, IndieHackers, and so much more.
@@ -94,6 +119,78 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="waitlistlp container">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/Assets/iPhone_12_Pro_dt_251w.png"
+            />
+            <img
+              src="/Assets/iPhone_12_Pro.png"
+              alt="iPhone Mockup Image"
+              class="waitlistlp__img"
+            />
+          </picture>
+          <div class="waitlistlp__info">
+            <h1 class="waitlistlp__info__title">
+              Access your feed from the comfort of your phone.
+            </h1>
+            <p class="waitlistlp__info__text">
+              With native apps for both iOS and Android, aceessing your curated
+              content has never been easier.
+            </p>
+            <a href="/" class="waitlistlp__info__btn">
+              Sign up for the waitlist<span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footerlp container">
+          <div class="footerlp__info">
+            <h1 class="footerlp__info__title">IndieBrew</h1>
+            <p class="footerlp__info__text">
+              With IndieBrew, get more personal feeds from resources all around
+              the web, including Reddit, HackerNews, and much more.
+            </p>
+            <p class="footerlp__info__text">Made with ❤ in the UK.</p>
+          </div>
+          <div class="footerlp__grid">
+            <div class="footerlp__grid__section">
+              <h1 class="footerlp__grid__section--title">Sitemap</h1>
+              <ul class="footerlp__grid__section--items">
+                <li class="footerlp__grid__section--items--li">Homepage</li>
+                <li class="footerlp__grid__section--items--li">Pricing</li>
+              </ul>
+            </div>
+            <div class="footerlp__grid__section">
+              <h1 class="footerlp__grid__section--title">Resources</h1>
+              <ul class="footerlp__grid__section--items">
+                <li class="footerlp__grid__section--items--li">Support</li>
+                <li class="footerlp__grid__section--items--li">Contact</li>
+                <li class="footerlp__grid__section--items--li">FAQ</li>
+              </ul>
+            </div>
+            <div class="footerlp__grid__section">
+              <h1 class="footerlp__grid__section--title">Company</h1>
+              <ul class="footerlp__grid__section--items">
+                <li class="footerlp__grid__section--items--li">About</li>
+                <li class="footerlp__grid__section--items--li">Customers</li>
+                <li class="footerlp__grid__section--items--li">Blog</li>
+              </ul>
+            </div>
+            <div class="footerlp__grid__section">
+              <h1 class="footerlp__grid__section--title">Portfolio</h1>
+              <ul class="footerlp__grid__section--items">
+                <li class="footerlp__grid__section--items--li">HackerNews</li>
+                <li class="footerlp__grid__section--items--li">Reddit</li>
+                <li class="footerlp__grid__section--items--li">Twitter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
