@@ -67,11 +67,9 @@ video {
 }
 
 .radial {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(184, 73, 252, 0.3) 0%,
-    rgba(253, 131, 63, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%,
+      rgba(184, 73, 252, 0.3) 0%,
+      rgba(253, 131, 63, 0) 100%);
   position: absolute;
   width: 326.89px;
   height: 1470.52px;
@@ -86,7 +84,7 @@ p {
 
 header,
 section,
-oter {
+footer {
   margin: 1rem;
 }
 
@@ -98,34 +96,40 @@ oter {
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+
   &__prev {
     display: flex;
     align-items: center;
     gap: 1rem;
+
     &--arrow {
       background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 5px;
       padding: 10px;
       aspect-ratio: 1/1;
+
       @media screen and (max-width: 668px) {
         border: none;
       }
     }
+
     &--link {
       text-decoration: none;
       font-family: var(--font-body);
       color: var(--content-primary);
       font-weight: 700;
     }
+
     #home {
       @media screen and (min-width: 668px) {
         display: none;
       }
     }
   }
+
   &__desktop {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 667px) {
       display: grid;
       text-align: center;
       display: none;
@@ -144,12 +148,15 @@ oter {
     @media screen and (min-width: 667px) {
       display: none;
     }
+
     display: inline-flex;
     // grid-template-columns: repeat(3, auto);
     align-items: center;
+
     &__header {
       &__grid {
         margin: 1rem 0;
+
         &--link {
           // margin-inline: 0.5rem;
           text-decoration: none;
@@ -159,17 +166,20 @@ oter {
         }
       }
     }
+
     &__btn {
       padding: 1rem 1.5rem;
       border: none;
       background-color: var(--ui--bg-purple);
       border-radius: 5px;
+
       &--text {
         font-family: var(--font-body);
         color: #fff;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.175rem;
+
         span {
           font-weight: normal;
         }
@@ -177,12 +187,14 @@ oter {
     }
   }
 }
+
 .wrapper {
   @media screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+
   .hero {
     &__title {
       font-family: var(--font-body);
@@ -193,23 +205,28 @@ oter {
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
+
     &__features {
       display: grid;
       gap: 1.5rem;
+
       &__section {
         display: flex;
         align-items: flex-start;
+
         &--text {
           margin-left: 5px;
           font-family: var(--font-body);
           font-size: 1.125rem;
         }
+
         &--terms {
           font-weight: 700;
         }
       }
     }
   }
+
   .form {
     background-color: #fff;
     display: grid;
@@ -224,27 +241,33 @@ oter {
       font-weight: 700;
       font-size: 24px;
     }
+
     &__body {
       display: grid;
       justify-content: center;
       gap: 1rem;
+
       &__section {
         display: grid;
+
         label {
           font-weight: 700;
           margin-bottom: 10px;
         }
+
         input {
           padding: 1rem;
           border: 1px solid #ccc;
           border-radius: 5px;
         }
+
         &--checkbox {
           label {
             font-weight: normal;
           }
         }
       }
+
       .submit__btn {
         padding: 1rem 0.5rem;
         background-color: var(--ui--bg-purple);
@@ -264,16 +287,19 @@ oter {
 
 .herolp {
   margin-top: 4rem;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
+
   &__img {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
   }
+
   &__info {
     &__title {
       font-family: var(--font-body);
@@ -282,28 +308,33 @@ oter {
       font-size: clamp(3rem, calc(2.3846rem + 3.0769vw), 4rem);
       margin: 1rem 0;
     }
+
     &__text {
       font-family: var(--font-body);
       color: var(--content-secondary);
       margin: 0.5rem 0;
       font-size: 1.2rem;
+
       span {
         color: var(--ui--bg-purple);
         font-weight: 700;
       }
     }
+
     &__btn {
       padding: 1rem 1.5rem;
       border: none;
       background-color: var(--ui--bg-purple);
       border-radius: 5px;
       margin: 1rem 0;
+
       &--text {
         font-family: var(--font-body);
         color: #fff;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.175rem;
+
         span {
           font-weight: normal;
         }
@@ -311,19 +342,23 @@ oter {
     }
   }
 }
+
 .resourceslp {
   margin-top: 5rem;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
     gap: 4rem;
     align-items: center;
   }
+
   &__img {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
   }
+
   &__info {
     &__title {
       font-family: var(--font-body);
@@ -332,35 +367,46 @@ oter {
       font-size: clamp(2.1rem, calc(1.7308rem + 1.8462vw), 2.7rem);
       margin: 1.2rem 0;
     }
+
     &__text {
       font-family: var(--font-body);
       color: var(--content-secondary);
       font-size: 1.125rem;
     }
+
     &__btn {
+      display: flex;
+      align-items: center;
       font-family: var(--font-body);
-      color: var(--ui--bg-purple);
       font-weight: 700;
-      text-decoration: none;
+      a {
+        color: var(--ui--bg-purple);
+        text-decoration: none;
+      }
       span {
         font-size: 1.4rem;
+        color: var(--ui--bg-purple);
       }
     }
   }
 }
+
 .waitlistlp {
   margin-top: 4rem;
+
   @media screen and (min-width: 700px) {
     display: flex;
     gap: 6rem;
     align-items: start;
-    margin-inline: 6rem;
+    margin-inline: auto;
   }
+
   &__img {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
   }
+
   &__info {
     &__title {
       font-family: var(--font-body);
@@ -369,29 +415,42 @@ oter {
       font-size: clamp(2.1rem, calc(1.7308rem + 1.8462vw), 2.7rem);
       margin: 1rem 0;
     }
+
     &__text {
       font-family: var(--font-body);
       color: var(--content-secondary);
       font-size: 1.175rem;
     }
+
     &__btn {
-      font-family: var(--font-body);
+      display: flex;
+      align-items: center;
       color: var(--ui--bg-purple);
+      font-family: var(--font-body);
       font-weight: 700;
-      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: var(--ui--bg-purple);
+      }
+
       span {
         font-size: 1.4rem;
+        color: var(--ui--bg-purple);
       }
     }
   }
 }
+
 .footerlp {
   margin-top: 5rem;
+
   @media screen and (min-width: 700px) {
     display: flex;
     gap: 6rem;
     align-items: baseline;
   }
+
   &__info {
     &__title {
       font-family: var(--font-body);
@@ -400,6 +459,7 @@ oter {
       font-size: 1.3rem;
       margin: 1rem 0;
     }
+
     &__text {
       font-family: var(--font-body);
       color: var(--content-secondary);
@@ -407,21 +467,26 @@ oter {
       font-size: 1.175rem;
     }
   }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     align-items: baseline;
+
     &__section {
       margin-right: 3rem;
       margin-top: 2rem;
+
       &--title {
         font-family: var(--font-body);
         color: var(--content-primary);
         font-weight: 700;
         font-size: 1.2rem;
       }
+
       &--items {
         list-style: none;
+
         &--li {
           font-family: var(--font-body);
           color: var(--content-secondary);
